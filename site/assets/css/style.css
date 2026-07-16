@@ -1101,6 +1101,56 @@ footer .fmeta {
     color: #fff;
 }
 
+.pricing-footer {
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+}
+
+.pricing-guarantee {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    background: rgba(242, 169, 59, 0.1);
+    border: 1px solid var(--hazard-amber);
+    color: var(--concrete-dark);
+    padding: 16px 32px;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 16px;
+    box-shadow: 0 4px 15px rgba(242, 169, 59, 0.15);
+}
+
+.pricing-guarantee svg {
+    color: var(--hazard-amber);
+}
+
+.pricing-contact-strip {
+    font-size: 18px;
+    color: var(--asphalt);
+    text-align: center;
+}
+
+.pricing-phone-link {
+    font-family: 'Oswald', sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--spray-blue);
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.pricing-phone-link:hover {
+    color: var(--deep-navy);
+}
+
+.pricing-sep {
+    color: var(--steel);
+    margin: 0 10px;
+}
+
 @media (max-width: 992px) {
     .pricing-card--featured {
         transform: none;
