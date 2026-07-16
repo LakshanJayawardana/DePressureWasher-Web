@@ -916,3 +916,205 @@ footer .fmeta {
         transform: none;
     }
 }
+
+/* ===== PRICING ===== */
+.pricing-section {
+    padding: 100px 0;
+    background: var(--clean-white);
+}
+
+.pricing-section .section-head {
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto 60px;
+}
+
+.pricing-section .section-head .eyebrow {
+    justify-content: center;
+    margin-bottom: 16px;
+}
+
+.pricing-section .section-head h2 {
+    font-size: 40px;
+    margin-bottom: 24px;
+    color: var(--concrete-dark);
+}
+
+.price-highlight {
+    color: var(--spray-blue);
+}
+
+.pricing-section .section-head p {
+    color: var(--asphalt);
+    font-size: 18px;
+}
+
+.pricing-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 32px;
+    align-items: stretch;
+}
+
+.pricing-card {
+    background: #ffffff;
+    border: 1px solid rgba(20, 23, 26, 0.08);
+    border-radius: 8px;
+    padding: 40px 32px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
+}
+
+.pricing-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+}
+
+.pricing-card--featured {
+    background: var(--concrete-dark);
+    color: var(--clean-white);
+    border-color: var(--concrete-dark);
+    transform: scale(1.05);
+    box-shadow: 0 16px 40px rgba(20, 23, 26, 0.15);
+    z-index: 2;
+}
+
+.pricing-card--featured:hover {
+    transform: scale(1.05) translateY(-8px);
+}
+
+.pricing-badge {
+    position: absolute;
+    top: -14px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--hazard-amber);
+    color: var(--concrete-dark);
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    padding: 6px 16px;
+    border-radius: 20px;
+    white-space: nowrap;
+}
+
+.pricing-icon {
+    width: 64px;
+    height: 64px;
+    background: rgba(23, 166, 224, 0.1);
+    color: var(--spray-blue);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 24px;
+}
+
+.pricing-card--featured .pricing-icon {
+    background: rgba(23, 166, 224, 0.2);
+}
+
+.pricing-service {
+    font-family: 'Oswald', sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.pricing-from {
+    font-size: 13px;
+    color: var(--asphalt);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-weight: 600;
+}
+
+.pricing-card--featured .pricing-from,
+.pricing-card--featured .pricing-note {
+    color: var(--steel);
+}
+
+.pricing-amount {
+    font-family: 'Oswald', sans-serif;
+    font-size: 48px;
+    font-weight: 700;
+    color: var(--spray-blue);
+    margin-bottom: 16px;
+}
+
+.pricing-note {
+    font-size: 15px;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 32px;
+    flex-grow: 1;
+}
+
+.pricing-cta {
+    display: block;
+    text-align: center;
+    padding: 14px 24px;
+    border-radius: 4px;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    text-decoration: none;
+    transition: all 0.2s ease;
+    border: 2px solid var(--spray-blue);
+    color: var(--spray-blue);
+}
+
+.pricing-cta:hover {
+    background: var(--spray-blue);
+    color: #fff;
+}
+
+.pricing-cta--primary {
+    background: var(--spray-blue);
+    color: #fff;
+}
+
+.pricing-cta--primary:hover {
+    background: transparent;
+    color: var(--spray-blue);
+}
+
+.pricing-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.pricing-cta--whatsapp {
+    border-color: #25D366;
+    color: #25D366;
+}
+
+.pricing-cta--whatsapp:hover {
+    background: #25D366;
+    color: #fff;
+}
+
+@media (max-width: 992px) {
+    .pricing-card--featured {
+        transform: none;
+    }
+    .pricing-card--featured:hover {
+        transform: translateY(-8px);
+    }
+}
+
+@media (max-width: 768px) {
+    .pricing-section {
+        padding: 60px 0;
+    }
+    .pricing-section .section-head h2 {
+        font-size: 32px;
+    }
+}
